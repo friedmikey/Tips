@@ -9,6 +9,8 @@
 import UIKit
 
 class IntroViewController: UIViewController {
+    var tipSize : NSString!
+    
     @IBOutlet weak var wentSmallButton: UIButton!
     @IBOutlet weak var wentMediumButton: UIButton!
     @IBOutlet weak var wentBigButton: UIButton!
@@ -20,13 +22,24 @@ class IntroViewController: UIViewController {
     
     @IBAction func onButtonTap(sender: UIButton) {
         if (sender == wentSmallButton) {
+            tipSize = "small";
             println("went small");
         }
         else if (sender == wentMediumButton) {
+            tipSize = "medium";
             println("went medium");
         }
         else if (sender == wentBigButton) {
+            tipSize = "big";
             println("went big");
+        }
+        self.performSegueWithIdentifier("tipViewControllerSegue", sender: sender);
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "tipViewControllerSegue") {
+            var nextViewController = (segue.destinationViewController as! ViewController)
+            nextViewController.tipSize = self.tipSize;
         }
     }
 }

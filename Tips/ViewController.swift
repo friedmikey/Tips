@@ -10,17 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+    var tipSize : NSString!
+    
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var closeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    tipLabel.text = "$0.00"
-    totalLabel.text = "$0.00"
         
+        if (self.tipSize == "small") {
+            tipLabel.text = "$1.00";
+        }
+        else if (self.tipSize == "medium") {
+            tipLabel.text = "$5.00";
+        }
+        else if (self.tipSize == "big") {
+            tipLabel.text = "$10.00";
+        }
+        totalLabel.text = "$0.00"
     }
     
 
@@ -44,6 +55,8 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
 
-
+    @IBAction func onCloseButtonTap(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
