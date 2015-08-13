@@ -48,8 +48,11 @@ class ViewController: UIViewController {
         var tip = billAmount * tipPercentage
         var total = billAmount + tip
         
+        // billField.text = String(format: "$%.2f", billAmount)
+        //figure out why number formatting isn't working right here
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f",total)
+    
     }
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
@@ -58,5 +61,6 @@ class ViewController: UIViewController {
     @IBAction func onCloseButtonTap(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
 }
 

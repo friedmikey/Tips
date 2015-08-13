@@ -10,6 +10,7 @@ import UIKit
 
 class IntroViewController: UIViewController {
     var tipSize : NSString!
+    var financialStatus : Double = 0.0
     
     @IBOutlet weak var wentSmallButton: UIButton!
     @IBOutlet weak var wentMediumButton: UIButton!
@@ -17,21 +18,24 @@ class IntroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        self.view.backgroundColor = UIColor.redColor();
+        //self.view.backgroundColor = UIColor.redColor();
     }
     
     @IBAction func onButtonTap(sender: UIButton) {
         if (sender == wentSmallButton) {
             tipSize = "small";
             println("went small");
+            financialStatus = 1;
         }
         else if (sender == wentMediumButton) {
             tipSize = "medium";
             println("went medium");
+            financialStatus = 1.5;
         }
         else if (sender == wentBigButton) {
             tipSize = "big";
             println("went big");
+            financialStatus = 2;
         }
         self.performSegueWithIdentifier("tipViewControllerSegue", sender: sender);
     }
