@@ -101,9 +101,9 @@
                         <color key="backgroundColor" red="0.24552774138976255" green="0.42529555882974623" blue="0.59355271464646464" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="fiveButton" destination="3gy-g1-Hrf" id="HQR-w7-VCP"/>
+                        <outlet property="fiveButton" destination="3gy-g1-Hrf" id="qj4-3Y-HQK"/>
                         <outlet property="fourButton" destination="xx6-0K-Uqv" id="WU4-or-vTC"/>
-                        <outlet property="oneButton" destination="dQ6-Wd-0Y7" id="dVp-jc-NM8"/>
+                        <outlet property="oneButton" destination="dQ6-Wd-0Y7" id="6DP-9M-JmR"/>
                         <outlet property="sixButton" destination="vGR-t2-xnN" id="rob-KV-ezc"/>
                         <outlet property="threeButton" destination="12k-Ly-Dgy" id="FXp-ab-c6l"/>
                         <outlet property="twoButton" destination="o4d-jJ-9Un" id="JHA-vu-wLO"/>
@@ -325,6 +325,7 @@
                         <outlet property="billField" destination="bpD-lG-Vm1" id="8hh-Sk-x4w"/>
                         <outlet property="closeButton" destination="JYw-VU-1D9" id="nI5-wP-7Ci"/>
                         <outlet property="themTab" destination="oBZ-6e-8oC" id="fse-WH-8Zx"/>
+                        <outlet property="themTabLabel" destination="oBZ-6e-8oC" id="w9A-UH-2wL"/>
                         <outlet property="themTipLabel" destination="zfo-ne-3aF" id="iof-8r-cpF"/>
                         <outlet property="themTotalLabel" destination="idr-AD-moo" id="KTw-DO-Jet"/>
                         <outlet property="tipControl" destination="29Z-MT-pRH" id="sSj-LJ-MH7"/>
@@ -332,6 +333,9 @@
                         <outlet property="totalLabel" destination="AMh-bC-Rmr" id="4qe-oi-JYt"/>
                         <outlet property="walletControl" destination="SdG-tN-Rzl" id="525-v1-rWp"/>
                         <outlet property="youTab" destination="qaV-VG-QHn" id="Fjl-eA-EcG"/>
+                        <outlet property="youTabLabel" destination="qaV-VG-QHn" id="9aI-Mm-EqG"/>
+                        <outlet property="youTipLabel" destination="wJE-EA-B3c" id="EeN-93-biI"/>
+                        <outlet property="youTotalLabel" destination="AMh-bC-Rmr" id="Nae-oD-KUC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
