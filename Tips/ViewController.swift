@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var themTotalLabel: UILabel!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var walletControl: UISlider!
+    @IBOutlet weak var partySizeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +67,7 @@ class ViewController: UIViewController {
         themTabLabel.text = String(format: "$%.2f", themTab)
         themTipLabel.text = String(format: "$%.2f", themTip)
         themTotalLabel.text = String(format: "$%.2f", themTotal)
+        partySizeLabel.text = "x \(partySize)"
         println("Multiplier: \(tipMultiplier)")
     
     }

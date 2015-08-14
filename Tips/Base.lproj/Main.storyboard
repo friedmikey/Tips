@@ -163,7 +163,7 @@
                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="ml4-SL-UHp"/>
                                 </connections>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.5" maxValue="3" id="SdG-tN-Rzl">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="3" id="SdG-tN-Rzl">
                                 <rect key="frame" x="14" y="454" width="292" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.77880960590000003" blue="0.22487847259999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -327,6 +327,13 @@
                                 <color key="textColor" red="0.96257329130000002" green="1" blue="0.99463986120000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tvZ-FK-zF5">
+                                <rect key="frame" x="258" y="317" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.77880960590000003" blue="0.22487847259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2455277414" green="0.42529555879999997" blue="0.59355271460000003" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -338,6 +345,7 @@
                     <connections>
                         <outlet property="billField" destination="bpD-lG-Vm1" id="8hh-Sk-x4w"/>
                         <outlet property="closeButton" destination="JYw-VU-1D9" id="nI5-wP-7Ci"/>
+                        <outlet property="partySizeLabel" destination="tvZ-FK-zF5" id="a1D-j3-4vw"/>
                         <outlet property="themTabLabel" destination="oBZ-6e-8oC" id="w9A-UH-2wL"/>
                         <outlet property="themTipLabel" destination="zfo-ne-3aF" id="iof-8r-cpF"/>
                         <outlet property="themTotalLabel" destination="idr-AD-moo" id="KTw-DO-Jet"/>
