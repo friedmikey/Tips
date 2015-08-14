@@ -40,6 +40,7 @@ class ViewController: UIViewController {
     
     @IBAction func onEditingChanged(sender: AnyObject) {
         
+        var billAmount = NSString(string: billField.text).doubleValue
         var youTab = NSString(string: billField.text).doubleValue / partySize
         var tipPercentages = [0.18, 0.2, 0.22]
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
@@ -47,17 +48,24 @@ class ViewController: UIViewController {
         var youTip = youTab * tipPercentage * tipMultiplier
         var youTotal = youTip + youTab
         
-        var billAmount = NSString(string: billField.text).doubleValue
-        var tip = billAmount * tipPercentage * tipMultiplier
-        var total = billAmount + tip
-        var thembBillAmount = NSString(string: billField.text).doubleValue - billAmount
+        var themTab = youTab
+        var themTip = ((billAmount * tipPercentage) - youTip) / (partySize - 1)
+        var themTotal = themTab + themTip
         
-        // billField.text = String(format: "$%.2f", billAmount)
-        //figure out why number formatting isn't working right here
+        
+//        var tip = billAmount * tipPercentage * tipMultiplier
+//        var total = billAmount + tip
+//        var thembBillAmount = NSString(string: billField.text).doubleValue - billAmount
+        
+//         billField.text = String(format: "$%.2f", billAmount)
+//        figure out why number formatting isn't working right here
         
         youTabLabel.text = String(format: "$%.2f", youTab)
         youTipLabel.text = String(format: "$%.2f", youTip)
         youTotalLabel.text = String(format: "$%.2f", youTotal)
+        themTabLabel.text = String(format: "$%.2f", themTab)
+        themTipLabel.text = String(format: "$%.2f", themTip)
+        themTotalLabel.text = String(format: "$%.2f", themTotal)
         println("Multiplier: \(tipMultiplier)")
     
     }
