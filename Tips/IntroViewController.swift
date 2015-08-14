@@ -9,12 +9,14 @@
 import UIKit
 
 class IntroViewController: UIViewController {
-    var tipSize : NSString!
-    var financialStatus : Double = 0.0
+    var partySize : Double = 0.0
     
-    @IBOutlet weak var wentSmallButton: UIButton!
-    @IBOutlet weak var wentMediumButton: UIButton!
-    @IBOutlet weak var wentBigButton: UIButton!
+    @IBOutlet weak var oneButton: UIButton!
+    @IBOutlet weak var twoButton: UIButton!
+    @IBOutlet weak var threeButton: UIButton!
+    @IBOutlet weak var fourButton: UIButton!
+    @IBOutlet weak var fiveButton: UIButton!
+    @IBOutlet weak var sixButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -22,20 +24,29 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func onButtonTap(sender: UIButton) {
-        if (sender == wentSmallButton) {
-            tipSize = "small";
-            println("went small");
-            financialStatus = 1;
+        if (sender == oneButton) {
+            partySize = 1;
+            println("party size is 1");
         }
-        else if (sender == wentMediumButton) {
-            tipSize = "medium";
-            println("went medium");
-            financialStatus = 1.5;
+        else if (sender == twoButton) {
+            partySize = 2;
+            println("party size is 2");
         }
-        else if (sender == wentBigButton) {
-            tipSize = "big";
-            println("went big");
-            financialStatus = 2;
+        else if (sender == threeButton) {
+            partySize = 3;
+            println("party size is 3");
+        }
+        else if (sender == fourButton) {
+            partySize = 4;
+            println("party size is 4");
+        }
+        else if (sender == fiveButton) {
+            partySize = 5;
+            println("party size is 5");
+        }
+        else if (sender == sixButton) {
+            partySize = 6;
+            println("party size is 6");
         }
         self.performSegueWithIdentifier("tipViewControllerSegue", sender: sender);
     }
@@ -43,7 +54,7 @@ class IntroViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "tipViewControllerSegue") {
             var nextViewController = (segue.destinationViewController as! ViewController)
-            nextViewController.tipSize = self.tipSize;
+            nextViewController.partySize = self.partySize;
         }
     }
 }
