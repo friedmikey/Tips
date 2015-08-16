@@ -40,7 +40,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func onEditingChanged(sender: AnyObject) {
-        
         var billAmount = NSString(string: billField.text).doubleValue
         var youTab = NSString(string: billField.text).doubleValue / partySize
         var tipPercentages = [0.18, 0.2, 0.22]
@@ -48,9 +47,16 @@ class ViewController: UIViewController {
         var tipMultiplier = Double(walletControl.value)
         var youTip = youTab * tipPercentage * tipMultiplier
         var youTotal = youTip + youTab
-        
-        var themTab = youTab
-        var themTip = ((billAmount * tipPercentage) - youTip) / (partySize - 1)
+        var themTip : Double = 0.0
+        var themTab : Double = 0.0
+        if ( partySize == 1) {
+            themTip = 0;
+            themTab = 0;
+        }
+        else {
+            themTip = ((billAmount * tipPercentage) - youTip) / (partySize - 1);
+            themTab = youTab
+        }
         var themTotal = themTab + themTip
         
         
