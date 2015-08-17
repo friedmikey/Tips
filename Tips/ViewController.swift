@@ -52,6 +52,8 @@ class ViewController: UIViewController {
         if (partySize == 1) {
             themTip = 0;
             themTab = 0;
+            youTip = youTab * tipPercentage;
+            youTotal = youTab + youTip;
         }
         else {
             themTip = ((billAmount * tipPercentage) - youTip) / (partySize - 1);
