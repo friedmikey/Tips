@@ -153,16 +153,6 @@
                                     <action selector="onCloseButtonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pn3-RS-Pgm"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="bpD-lG-Vm1">
-                                <rect key="frame" x="0.0" y="110" width="320" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="0.77880960590000003" blue="0.22487847259999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="76"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="ml4-SL-UHp"/>
-                                </connections>
-                            </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="3" id="SdG-tN-Rzl">
                                 <rect key="frame" x="14" y="454" width="292" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -334,6 +324,16 @@
                                 <color key="textColor" red="1" green="0.77880960590000003" blue="0.22487847259999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0" textAlignment="center" minimumFontSize="17" id="zKy-bG-xcI">
+                                <rect key="frame" x="0.0" y="110" width="321" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.77880960590000003" blue="0.22487847259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="76"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="BzB-k2-nrn"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.2455277414" green="0.42529555879999997" blue="0.59355271460000003" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -343,7 +343,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="69P-oi-yZc"/>
                     <connections>
-                        <outlet property="billField" destination="bpD-lG-Vm1" id="8hh-Sk-x4w"/>
+                        <outlet property="billField" destination="zKy-bG-xcI" id="n7w-Ue-Kff"/>
                         <outlet property="closeButton" destination="JYw-VU-1D9" id="nI5-wP-7Ci"/>
                         <outlet property="partySizeLabel" destination="tvZ-FK-zF5" id="a1D-j3-4vw"/>
                         <outlet property="themTabLabel" destination="oBZ-6e-8oC" id="w9A-UH-2wL"/>
@@ -351,7 +351,7 @@
                         <outlet property="themTotalLabel" destination="idr-AD-moo" id="KTw-DO-Jet"/>
                         <outlet property="tipControl" destination="29Z-MT-pRH" id="sSj-LJ-MH7"/>
                         <outlet property="walletControl" destination="SdG-tN-Rzl" id="525-v1-rWp"/>
-                        <outlet property="youTabLabel" destination="qaV-VG-QHn" id="9aI-Mm-EqG"/>
+                        <outlet property="youTabLabel" destination="qaV-VG-QHn" id="951-aZ-OsC"/>
                         <outlet property="youTipLabel" destination="wJE-EA-B3c" id="EeN-93-biI"/>
                         <outlet property="youTotalLabel" destination="AMh-bC-Rmr" id="Nae-oD-KUC"/>
                     </connections>

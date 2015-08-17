@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         var youTotal = youTip + youTab
         var themTip : Double = 0.0
         var themTab : Double = 0.0
-        if ( partySize == 1) {
+        if (partySize == 1) {
             themTip = 0;
             themTab = 0;
         }
