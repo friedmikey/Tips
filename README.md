@@ -33,11 +33,12 @@ Approximately ten hours.
 --------------------------------------------
 VI. STORIES COMPLETED
 --------------------------------------------
-# Tips calculator
-# Optional Tasks: not included, however I experimented with adding other features on my own:
-#* Party size calculation
-#* Second launch screen
-#* Slider for varying tab size
+1. Tips calculator
+2. Optional Tasks: not included, however I experimented with adding other features on my own:
+a.  Party size calculation
+b.  Second launch screen
+c.  Slider for varying tab size
+
 --------------------------------------------
 VI. FUTURE RELEASES
 --------------------------------------------
