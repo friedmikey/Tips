@@ -26,7 +26,20 @@ IV. WALKTHROUGH OF FEATURES
 ![Alt text](https://cloud.githubusercontent.com/assets/11700283/9296595/56aa6150-4445-11e5-8602-eeed67276c9f.gif "Tips Walkthrough")
 
 --------------------------------------------
-IV. FUTURE RELEASES
+V. TIME SPENT ON PROJECT
+--------------------------------------------
+Approximately ten hours.
+
+--------------------------------------------
+VI. STORIES COMPLETED
+--------------------------------------------
+# Tips calculator
+# Optional Tasks: not included, however I experimented with adding other features on my own:
+#* Party size calculation
+#* Second launch screen
+#* Slider for varying tab size
+--------------------------------------------
+VI. FUTURE RELEASES
 --------------------------------------------
 a. Additional screen size support
 b. Custom party size
