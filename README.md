@@ -21,6 +21,11 @@ d. How big slider?: Allows you to fairly adjust what you pay versus your friends
 e. You vs. Them: A simple summary of what you and your friends need to pay.
 
 --------------------------------------------
+IV. WALKTHROUGH OF FEATURES
+--------------------------------------------
+![Alt text](https://cloud.githubusercontent.com/assets/11700283/9296595/56aa6150-4445-11e5-8602-eeed67276c9f.gif "Tips Walkthrough")
+
+--------------------------------------------
 IV. FUTURE RELEASES
 --------------------------------------------
 a. Additional screen size support
@@ -28,3 +33,4 @@ b. Custom party size
 c. Tax breakout
 d. Custom tip percentage
 e. Individual how big sliders for each person
+
