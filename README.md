@@ -14,11 +14,11 @@ Tips is built using Xcode's Interface Builder. The interface was designed using 
 --------------------------------------------
 III. FEATURES
 --------------------------------------------
-a. Party Size: You can select a party size up to six by tapping on the appropriate label. The value here is used to determine the tab and tip breakdown on the next screen. You can return to this screen by tapping the "Close" button on the top right of the second screen, however any inputs on the second screen will be reset.
-b. Bill Size: Enter your total check size, including tax. Future releases will break out tax. I couldn't figure out how to retain the "$0.00" formatting once the user entered a number, so for this release the value won't have a "$" label.
-c. Tip percentage selector: Tap the tip percentage your party has agreed to leave. A future release will include a custom percentage.
-d. How big slider?: Allows you to fairly adjust what you pay versus your friends if you had more or less. If you had less than your friends, slide left. More, slide right. The split of the tab and tip will automatically adjust accordingly and ensure that the waiter gets the correct total.
-e. You vs. Them: A simple summary of what you and your friends need to pay.
+1. Party Size: You can select a party size up to six by tapping on the appropriate label. The value here is used to determine the tab and tip breakdown on the next screen. You can return to this screen by tapping the "Close" button on the top right of the second screen, however any inputs on the second screen will be reset.
+2. Bill Size: Enter your total check size, including tax. Future releases will break out tax. I couldn't figure out how to retain the "$0.00" formatting once the user entered a number, so for this release the value won't have a "$" label.
+3. Tip percentage selector: Tap the tip percentage your party has agreed to leave. A future release will include a custom percentage.
+4. How big slider?: Allows you to fairly adjust what you pay versus your friends if you had more or less. If you had less than your friends, slide left. More, slide right. The split of the tab and tip will automatically adjust accordingly and ensure that the waiter gets the correct total.
+5. You vs. Them: A simple summary of what you and your friends need to pay.
 
 --------------------------------------------
 IV. WALKTHROUGH OF FEATURES
@@ -35,16 +35,16 @@ VI. STORIES COMPLETED
 --------------------------------------------
 1. Tips calculator
 2. Optional Tasks: not included, however I experimented with adding other features on my own:
-a.  Party size calculation
-b.  Second launch screen
-c.  Slider for varying tab size
+  *  Party size calculation
+  *  Second launch screen
+  *  Slider for varying tab size
 
 --------------------------------------------
 VI. FUTURE RELEASES
 --------------------------------------------
-a. Additional screen size support
-b. Custom party size
-c. Tax breakout
-d. Custom tip percentage
-e. Individual how big sliders for each person
+1. Additional screen size support
+2. Custom party size
+3. Tax breakout
+4. Custom tip percentage
+5. Individual how big sliders for each person
 
